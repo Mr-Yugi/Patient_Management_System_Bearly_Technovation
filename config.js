@@ -15,9 +15,6 @@ const {
   SQL_DATABASE_UK,
   SQL_SERVER,
   API_KEY,
-  IN_PATH,
-  UK_PATH,
-  COMMON_PATH
 } = process.env;
 
 const sqlEncrypt = process.env.SQL_ENCRYPT === "true";
@@ -29,10 +26,7 @@ module.exports = {
   port: PORT,
   host: HOST,
   url: HOST_URL,
-  apiKey: API_KEY,
-  inPath:IN_PATH,
-  ukPath:UK_PATH,
-  commonPath:COMMON_PATH,
+  apiKey: API_KEY, 
   sql: {
     UK: {
       server: SQL_SERVER,
