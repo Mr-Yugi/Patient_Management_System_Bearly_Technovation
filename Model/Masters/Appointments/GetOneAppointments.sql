@@ -12,6 +12,6 @@ SELECT
     a.ModifiedBy,
     a.ModifiedOn
 FROM dbo.tbl_Appointments a
-left outer JOIN dbo.tbl_Patients p ON a.Patient_ID = p.Patient_ID
-left outer JOIN dbo.tbl_Doctors d ON a.Doctor_ID = d.Doctor_ID
+left outer JOIN tbl_Patients p ON a.Patient_ID = p.Patient_ID
+left outer JOIN tbl_Doctors d ON a.Doctor_ID = d.Doctor_ID
 WHERE a.Appointment_ID = @Appointment_ID;
